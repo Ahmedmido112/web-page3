@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background: black;
+    color: blanchedalmond;
+}
+.box{
+    width: 80%;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-auto-rows: minmax(200px,auto);
+    grid-template-areas:
+        "d d d d d d "
+        "v v v v p p"
+        "v v v v p p "
+        
+       ;
+}
+.head{
+    grid-area: d;
+    
+    color: white;
+   
+    
+    
+}
+.nav{
+    grid-area: v;
+    
+}
+.pr{
+    grid-area: p;
+    
+}
+.head ul{
+    text-transform: uppercase;
+    background: orangered;
+    
+}
+.head ul li{
+    display: inline-block;
+    margin: 10px;
+    
+    padding: 10px;
+    
+}
+.nav form{
+    width: 200px;
+    height: 250px;
+    border: solid orangered;
+    margin: 20px;
+}
+.nav form:hover{
+    border: white 2px solid;
+}
+.nav form h1{
+    color: orangered;
+    text-align: center;
+    text-transform: uppercase;   
+    margin: 10px;
+}
+.nav form p{
+    margin-bottom: 10px;
+    color: palegoldenrod;
+    margin-left: 5px;
+}
+.nav form input[type="password"],input[type="text"]{
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: solid 2px white;
+    color: wheat;
+    margin-bottom:10px ;
+    margin-left: 5px;
+}
+.nav form .f{
+    color: red;
+    margin-left: 5px;
+}
+.nav form .f:hover{
+    transition: 0.5;
+    color: green;
+}
+.nav form .b2{
+    text-align: center;
+    margin-left: 30px;
+    width: 100px;
+    background: wheat;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav form .b2:hover{
+    background: orangered;
+}
+.pr{
+    width: 300px;
+    height: 250px;
+    border: solid orangered;
+    margin: 20px;
+}
+.pr h3{
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+    color: orangered;
+    text-transform: uppercase;
+    
+}
+.pr p{
+    line-height:20px ;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.pr .bt{
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.pr .bt input[type="button"]:hover{
+    background: orangered;
+
+}
+.nav form input[type="password"]:hover,input[type="text"]:hover{
+    border-bottom:solid 2px orangered ;
+    transition: 0.5s;
+}
